@@ -1,0 +1,150 @@
+/* Container */
+.file-uploader-container {
+  max-width: 450px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease;
+}
+
+.file-uploader-container:hover {
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.file-uploader-container h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+}
+/* Existing container & preview styles remain unchanged */
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Modal content */
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  position: relative;
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  animation: popup 0.3s ease;
+}
+
+/* Modal animation */
+@keyframes popup {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Close button */
+.close-btn {
+  margin-top: 15px;
+  padding: 8px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  background-color: #0056b3;
+}
+
+/* QR image */
+.modal-content img {
+  width: 180px;
+  height: 180px;
+  margin-top: 10px;
+  border-radius: 12px;
+}
+
+/* File Input */
+.file-uploader-container input[type="file"] {
+  display: inline-block;
+  width: 55%;
+  border-radius: 10px;
+  border: 2px dashed #007bff;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.file-uploader-container input[type="file"]:hover {
+  border-color: #0056b3;
+  background-color: #e6f0ff;
+}
+
+/* Button */
+.file-uploader-container button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.file-uploader-container button:hover {
+  background-color: #0056b3;
+}
+
+/* Preview Image */
+.file-uploader-container .preview-image {
+  margin-top: 20px;
+  width: 280px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.file-uploader-container .preview-image:hover {
+  transform: scale(1.05);
+}
+
+/* QR Code Section */
+.file-uploader-container .qr-section {
+  margin-top: 25px;
+  padding: 15px;
+  border: 1px solid #007bff;
+  border-radius: 12px;
+  background-color: #f0f8ff;
+  transition: all 0.3s ease;
+}
+
+.file-uploader-container .qr-section h3 {
+  color: #007bff;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.file-uploader-container .qr-section img {
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
