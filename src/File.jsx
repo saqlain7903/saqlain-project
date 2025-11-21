@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import './File.css'
-import { IoXxx } from "react-icons/io5";
+import { IoAdd } from "react-icons/io5";
 
 const File = () => {
   const [selectedFile, setSelectedFile] = useState(null);
