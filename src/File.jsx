@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+/*import React, { useState } from "react";
 import axios from "axios";
 import './File.css'
 
@@ -87,4 +87,6 @@ const File = () => {
     </div>
   );
 };
+
 export default File;
+*/
